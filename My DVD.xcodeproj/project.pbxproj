@@ -14,7 +14,6 @@
 		AE3DC6B01870A244005E9461 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DC6AF1870A244005E9461 /* main.m */; };
 		AE3DC6B41870A244005E9461 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DC6B31870A244005E9461 /* AppDelegate.m */; };
 		AE3DC6B71870A244005E9461 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3DC6B51870A244005E9461 /* Main_iPhone.storyboard */; };
-		AE3DC6BA1870A244005E9461 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3DC6B81870A244005E9461 /* Main_iPad.storyboard */; };
 		AE3DC6BD1870A244005E9461 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DC6BC1870A244005E9461 /* ViewController.m */; };
 		AE3DC6BF1870A244005E9461 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3DC6BE1870A244005E9461 /* Images.xcassets */; };
 		AE3DC6C61870A244005E9461 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3DC6C51870A244005E9461 /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		AE3DC6C81870A244005E9461 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3DC6A71870A244005E9461 /* UIKit.framework */; };
 		AE3DC6D01870A244005E9461 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE3DC6CE1870A244005E9461 /* InfoPlist.strings */; };
 		AE3DC6D21870A244005E9461 /* My_DVDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DC6D11870A244005E9461 /* My_DVDTests.m */; };
+		AE8FC8561870A58900A8B4DE /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8FC8551870A58900A8B4DE /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		AE3DC6B21870A244005E9461 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE3DC6B31870A244005E9461 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE3DC6B61870A244005E9461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		AE3DC6B91870A244005E9461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		AE3DC6BB1870A244005E9461 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AE3DC6BC1870A244005E9461 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AE3DC6BE1870A244005E9461 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		AE3DC6CD1870A244005E9461 /* My DVDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My DVDTests-Info.plist"; sourceTree = "<group>"; };
 		AE3DC6CF1870A244005E9461 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE3DC6D11870A244005E9461 /* My_DVDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_DVDTests.m; sourceTree = "<group>"; };
+		AE8FC8551870A58900A8B4DE /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		AE8FC8571870A58900A8B4DE /* My DVD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "My DVD.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8FC8561870A58900A8B4DE /* PassKit.framework in Frameworks */,
 				AE3DC6A61870A244005E9461 /* CoreGraphics.framework in Frameworks */,
 				AE3DC6A81870A244005E9461 /* UIKit.framework in Frameworks */,
 				AE3DC6A41870A244005E9461 /* Foundation.framework in Frameworks */,
@@ -103,6 +105,7 @@
 		AE3DC6A21870A244005E9461 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE8FC8551870A58900A8B4DE /* PassKit.framework */,
 				AE3DC6A31870A244005E9461 /* Foundation.framework */,
 				AE3DC6A51870A244005E9461 /* CoreGraphics.framework */,
 				AE3DC6A71870A244005E9461 /* UIKit.framework */,
@@ -114,10 +117,10 @@
 		AE3DC6A91870A244005E9461 /* My DVD */ = {
 			isa = PBXGroup;
 			children = (
+				AE8FC8571870A58900A8B4DE /* My DVD.entitlements */,
 				AE3DC6B21870A244005E9461 /* AppDelegate.h */,
 				AE3DC6B31870A244005E9461 /* AppDelegate.m */,
 				AE3DC6B51870A244005E9461 /* Main_iPhone.storyboard */,
-				AE3DC6B81870A244005E9461 /* Main_iPad.storyboard */,
 				AE3DC6BB1870A244005E9461 /* ViewController.h */,
 				AE3DC6BC1870A244005E9461 /* ViewController.m */,
 				AE3DC6BE1870A244005E9461 /* Images.xcassets */,
@@ -204,6 +207,17 @@
 				TargetAttributes = {
 					AE3DC69F1870A244005E9461 = {
 						DevelopmentTeam = HEFSF24EZX;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Passbook = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					AE3DC6C31870A244005E9461 = {
 						TestTargetID = AE3DC69F1870A244005E9461;
@@ -234,7 +248,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3DC6BA1870A244005E9461 /* Main_iPad.storyboard in Resources */,
 				AE3DC6BF1870A244005E9461 /* Images.xcassets in Resources */,
 				AE3DC6B71870A244005E9461 /* Main_iPhone.storyboard in Resources */,
 				AE3DC6AE1870A244005E9461 /* InfoPlist.strings in Resources */,
@@ -295,14 +308,6 @@
 				AE3DC6B61870A244005E9461 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		AE3DC6B81870A244005E9461 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE3DC6B91870A244005E9461 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		AE3DC6CE1870A244005E9461 /* InfoPlist.strings */ = {
@@ -395,12 +400,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "My DVD/My DVD.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "My DVD/My DVD-Prefix.pch";
 				INFOPLIST_FILE = "My DVD/My DVD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,12 +419,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "My DVD/My DVD.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "My DVD/My DVD-Prefix.pch";
 				INFOPLIST_FILE = "My DVD/My DVD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -481,6 +494,7 @@
 				AE3DC6D71870A244005E9461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE3DC6D81870A244005E9461 /* Build configuration list for PBXNativeTarget "My DVDTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +503,7 @@
 				AE3DC6DA1870A244005E9461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
