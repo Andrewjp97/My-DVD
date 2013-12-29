@@ -22,6 +22,7 @@
 		AE3DC6D01870A244005E9461 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE3DC6CE1870A244005E9461 /* InfoPlist.strings */; };
 		AE3DC6D21870A244005E9461 /* My_DVDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DC6D11870A244005E9461 /* My_DVDTests.m */; };
 		AE8FC8561870A58900A8B4DE /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8FC8551870A58900A8B4DE /* PassKit.framework */; };
+		AE8FC85A1870ACBD00A8B4DE /* DVD.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8FC8591870ACBD00A8B4DE /* DVD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		AE3DC6D11870A244005E9461 /* My_DVDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_DVDTests.m; sourceTree = "<group>"; };
 		AE8FC8551870A58900A8B4DE /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		AE8FC8571870A58900A8B4DE /* My DVD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "My DVD.entitlements"; sourceTree = "<group>"; };
+		AE8FC8581870ACBD00A8B4DE /* DVD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVD.h; sourceTree = "<group>"; };
+		AE8FC8591870ACBD00A8B4DE /* DVD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				AE3DC6B21870A244005E9461 /* AppDelegate.h */,
 				AE3DC6B31870A244005E9461 /* AppDelegate.m */,
 				AE3DC6B51870A244005E9461 /* Main_iPhone.storyboard */,
+				AE8FC8581870ACBD00A8B4DE /* DVD.h */,
+				AE8FC8591870ACBD00A8B4DE /* DVD.m */,
 				AE3DC6BB1870A244005E9461 /* ViewController.h */,
 				AE3DC6BC1870A244005E9461 /* ViewController.m */,
 				AE3DC6BE1870A244005E9461 /* Images.xcassets */,
@@ -271,6 +276,7 @@
 			files = (
 				AE3DC6BD1870A244005E9461 /* ViewController.m in Sources */,
 				AE3DC6B41870A244005E9461 /* AppDelegate.m in Sources */,
+				AE8FC85A1870ACBD00A8B4DE /* DVD.m in Sources */,
 				AE3DC6B01870A244005E9461 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
