@@ -23,6 +23,9 @@
 		AE3DC6D21870A244005E9461 /* My_DVDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3DC6D11870A244005E9461 /* My_DVDTests.m */; };
 		AE8FC8561870A58900A8B4DE /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8FC8551870A58900A8B4DE /* PassKit.framework */; };
 		AE8FC85A1870ACBD00A8B4DE /* DVD.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8FC8591870ACBD00A8B4DE /* DVD.m */; };
+		AE8FC85D1870B07B00A8B4DE /* DVDLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8FC85C1870B07B00A8B4DE /* DVDLibrary.m */; };
+		AE8FC8601870B15200A8B4DE /* DVDEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8FC85F1870B15200A8B4DE /* DVDEnumerator.m */; };
+		AE8FC8621870B2E500A8B4DE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8FC8611870B2E500A8B4DE /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,11 @@
 		AE8FC8571870A58900A8B4DE /* My DVD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "My DVD.entitlements"; sourceTree = "<group>"; };
 		AE8FC8581870ACBD00A8B4DE /* DVD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVD.h; sourceTree = "<group>"; };
 		AE8FC8591870ACBD00A8B4DE /* DVD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVD.m; sourceTree = "<group>"; };
+		AE8FC85B1870B07B00A8B4DE /* DVDLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVDLibrary.h; sourceTree = "<group>"; };
+		AE8FC85C1870B07B00A8B4DE /* DVDLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVDLibrary.m; sourceTree = "<group>"; };
+		AE8FC85E1870B15200A8B4DE /* DVDEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVDEnumerator.h; sourceTree = "<group>"; };
+		AE8FC85F1870B15200A8B4DE /* DVDEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVDEnumerator.m; sourceTree = "<group>"; };
+		AE8FC8611870B2E500A8B4DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8FC8621870B2E500A8B4DE /* CoreData.framework in Frameworks */,
 				AE8FC8561870A58900A8B4DE /* PassKit.framework in Frameworks */,
 				AE3DC6A61870A244005E9461 /* CoreGraphics.framework in Frameworks */,
 				AE3DC6A81870A244005E9461 /* UIKit.framework in Frameworks */,
@@ -108,6 +117,7 @@
 		AE3DC6A21870A244005E9461 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE8FC8611870B2E500A8B4DE /* CoreData.framework */,
 				AE8FC8551870A58900A8B4DE /* PassKit.framework */,
 				AE3DC6A31870A244005E9461 /* Foundation.framework */,
 				AE3DC6A51870A244005E9461 /* CoreGraphics.framework */,
@@ -126,6 +136,10 @@
 				AE3DC6B51870A244005E9461 /* Main_iPhone.storyboard */,
 				AE8FC8581870ACBD00A8B4DE /* DVD.h */,
 				AE8FC8591870ACBD00A8B4DE /* DVD.m */,
+				AE8FC85B1870B07B00A8B4DE /* DVDLibrary.h */,
+				AE8FC85C1870B07B00A8B4DE /* DVDLibrary.m */,
+				AE8FC85E1870B15200A8B4DE /* DVDEnumerator.h */,
+				AE8FC85F1870B15200A8B4DE /* DVDEnumerator.m */,
 				AE3DC6BB1870A244005E9461 /* ViewController.h */,
 				AE3DC6BC1870A244005E9461 /* ViewController.m */,
 				AE3DC6BE1870A244005E9461 /* Images.xcassets */,
@@ -274,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8FC8601870B15200A8B4DE /* DVDEnumerator.m in Sources */,
 				AE3DC6BD1870A244005E9461 /* ViewController.m in Sources */,
+				AE8FC85D1870B07B00A8B4DE /* DVDLibrary.m in Sources */,
 				AE3DC6B41870A244005E9461 /* AppDelegate.m in Sources */,
 				AE8FC85A1870ACBD00A8B4DE /* DVD.m in Sources */,
 				AE3DC6B01870A244005E9461 /* main.m in Sources */,
