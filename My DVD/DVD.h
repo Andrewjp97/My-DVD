@@ -19,8 +19,9 @@
 @property (strong, nonatomic)NSString *rating;
 @property (strong, nonatomic)NSArray *genres;
 @property (strong, nonatomic)NSURL *linkToIMDB;
-@property BOOL loanedOut;
-@property BOOL loanedTo;
+@property (strong, nonatomic)NSNumber *loanedOut;
+@property (strong, nonatomic)NSNumber *loanedTo;
 @property (strong, nonatomic)NSDate *returnDate;
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (NSDictionary*)decompileDVDIntoDictionary:(DVD *)dvd;
 @end

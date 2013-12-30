@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface DVDEnumerator : NSObject
-- (void)enumerateDVDsInManagedObjectContext:()
+- (NSArray *)enumerateDVDsWithDictionariesInArray:(NSArray *)array;
++ (NSArray *)enumerateDVDsWithDictionariesInArray:(NSArray *)array;
+- (NSArray *)denumerateDVDsInArray:(NSArray *)array;
++ (NSArray *)denumerateDVDsInArray:(NSArray *)array;
 @end

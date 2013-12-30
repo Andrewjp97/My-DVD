@@ -16,4 +16,15 @@
     }
     return self;
 }
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return self.dvds.count;
+}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DVDCell" forIndexPath:indexPath];
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:3];
+    imageView.image = [UIImage imageWithContentsOfFile:[[self.dvds objectAtIndex:indexPath.row] coverArtFile]];
+    
+    
+    return cell;
+}
 @end

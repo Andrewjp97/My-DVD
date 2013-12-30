@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DVDLibrary : NSObject
+@interface DVDLibrary : NSObject <UICollectionViewDataSource>
 - (instancetype)initWithDvds:(NSArray *)dvds;
 @property (strong, nonatomic)NSArray *dvds;
 @end

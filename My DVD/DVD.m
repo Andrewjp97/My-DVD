@@ -37,15 +37,23 @@
         self.linkToIMDB = [NSURL URLWithString:[dictionary objectForKey:@"stringToIMDB"]];
         if ([dictionary objectForKey:@"loanedOut"] || [dictionary objectForKey:@"loanedTo"]) {
             if ([dictionary objectForKey:@"loanedOut"]) {
-                self.loanedOut = YES;
+                self.loanedOut = @1;
                 self.returnDate = [dictionary objectForKey:@"returnDate"];
             }
             else {
-                self.loanedTo = YES;
+                self.loanedTo = @1;
                 self.returnDate = [dictionary objectForKey:@"returnDate"];
             }
         }
     }
     return self;
 }
+- (NSDictionary *)decompileDVDIntoDictionary:(DVD *)dvd{
+    NSDictionary *returnDictionary = @{@"title": dvd.title, @"year": dvd.year, @"coverArtFile": dvd.coverArtFile,
+                                       @"director": dvd.director, @"cast": dvd.cast, @"rating": dvd.rating,
+                                       @"genres": dvd.genres, @"stringToIMDB": [self.linkToIMDB path],
+                                       @"loanedTo": self.loanedTo, @"loanedOut": self.loanedOut, @"returnDate": self.returnDate};
+    return returnDictionary;
+}
+
 @end

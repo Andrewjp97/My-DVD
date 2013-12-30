@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CollectionViewController.h
 //  My DVD
 //
 //  Created by Andrew Paterson on 12/29/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CollectionViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
 
 @end
