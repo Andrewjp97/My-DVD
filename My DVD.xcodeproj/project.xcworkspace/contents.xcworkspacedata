@@ -2,6 +2,27 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:lcl_config_logger_RK.h">
+   </FileRef>
+   <FileRef
+      location = "group:LCLNSLog_RK.h">
+   </FileRef>
+   <FileRef
+      location = "group:LCLNSLog_RK.m">
+   </FileRef>
+   <FileRef
+      location = "group:lcl_RK.m">
+   </FileRef>
+   <FileRef
+      location = "group:lcl_RK.h">
+   </FileRef>
+   <FileRef
+      location = "group:SOCKit.h">
+   </FileRef>
+   <FileRef
+      location = "group:SOCKit.m">
+   </FileRef>
+   <FileRef
       location = "self:My DVD.xcodeproj">
    </FileRef>
 </Workspace>
